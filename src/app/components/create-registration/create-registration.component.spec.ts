@@ -21,3 +21,4 @@ describe('CreateRegistrationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
