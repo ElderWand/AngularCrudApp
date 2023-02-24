@@ -2,6 +2,8 @@ import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NgToastService } from 'ng-angular-popup';
+import { ActivatedRoute, Router } from '@angular/router';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-create-registration',
@@ -9,6 +11,7 @@ import { NgToastService } from 'ng-angular-popup';
   styleUrls: ['./create-registration.component.css']
 })
 export class CreateRegistrationComponent implements OnInit {
+
 
 favoriteSeason!: string;
 trainerOptions: string[] = ['Yes', 'No', 'Maybe'];
@@ -25,10 +28,14 @@ importantList: string[] = [
 ];
 
 public registerForm!: FormGroup;
+public userToUpdate!: number;
+public isUpdateActive = false;
 
 constructor(
   private fb: FormBuilder, 
   private api: ApiService, 
+  private router: Router,
+  private activatedRoute: ActivatedRoute,
   private toastService: NgToastService) {
 
 }
@@ -56,6 +63,42 @@ ngOnInit(): void {
     this.calculateBmi(res);
   });
 
+  this.activatedRoute.params.subscribe(val =>{
+    this.userToUpdate = val['id'];
+    this.api.getRegisterdUserId(this.userToUpdate)
+    .subscribe(res=>{
+      this.isUpdateActive = !this.isUpdateActive;
+      this.fillFormToUpdate(res);
+    })
+  })
+}
+
+updateUser() {
+  this.api.updateRegisterUser(this.registerForm.value, this.userToUpdate)
+  .subscribe(res=>{
+    this.toastService.success({detail: "Success", summary: "Enquiry Updated", duration: 3000});
+    this.registerForm.reset;
+    this.router.navigate(['list']);
+  })
+  }
+
+fillFormToUpdate(user: User) {
+  this.registerForm.setValue({
+    firstName: user.firstName,
+    lastName: user.lastName,
+    email: user.email,
+    phone: user.phone,
+    weight: user.weight,
+    height: user.height,
+    bmi: user.bmi,
+    bmiResult: user.bmiResult,
+    requireTrainer: user.requireTrainer,
+    userGender: user.userGender,
+    userPackage: user.userPackage,
+    userGoals: user.userGoals,
+    beenInGym: user.beenInGym,
+    enquiryDate: user.enquiryDate
+  })
 }
 
 submit() {
@@ -88,5 +131,6 @@ calculateBmi(heightValue: number) {
       break;
   }
 }
+
 
 }

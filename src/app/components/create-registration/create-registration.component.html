@@ -126,7 +126,8 @@
         </div>
         <div class="row">
             <div class="col-md-12 mt-4 text-center">
-                <button (click)="submit()" mat-raised-button color="accent">Submit</button>
+                <button *ngIf="!isUpdateActive" (click)="submit()" mat-raised-button color="accent">Submit</button>
+                <button *ngIf="isUpdateActive" (click)="updateUser()" mat-raised-button color="accent">Update</button>
             </div>
         </div>
     </form>

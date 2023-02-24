@@ -1,168 +1,44 @@
 {
   "enquiry": [
     {
-      "firstName": "Face",
-      "lastName": "Book",
-      "email": "test@test.com",
-      "phone": "9999999",
-      "weight": 60,
-      "height": 1.6,
-      "bmi": 18.75,
+      "firstName": "Name",
+      "lastName": "Box",
+      "email": "Teedoz",
+      "phone": "Love",
+      "weight": 78,
+      "height": 1.7,
+      "bmi": 22.941176470588236,
       "bmiResult": "Normal",
-      "requireTrainer": "Yes",
-      "userGender": "Male",
+      "requireTrainer": "No",
+      "userGender": "Female",
       "userPackage": "Yearly",
       "userGoals": [
-        "Healthier digestive system"
+        "Energy and Endurance",
+        "Building lean muscle"
       ],
-      "beenInGym": "Never",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
-      "id": 1
-    },
-    {
-      "firstName": "Face",
-      "lastName": "Book",
-      "email": "test@test.com",
-      "phone": "9999999",
-      "weight": 60,
-      "height": 1.6,
-      "bmi": 18.75,
-      "bmiResult": "Normal",
-      "requireTrainer": "Yes",
-      "userGender": "Male",
-      "userPackage": "Yearly",
-      "userGoals": [
-        "Healthier digestive system"
-      ],
-      "beenInGym": "Never",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
+      "beenInGym": "Yes",
+      "enquiryDate": "2023-02-24T23:00:00.000Z",
       "id": 2
     },
     {
-      "firstName": "Face",
-      "lastName": "Book",
-      "email": "test@test.com",
-      "phone": "9999999",
-      "weight": 60,
-      "height": 1.6,
-      "bmi": 18.75,
+      "firstName": "Name",
+      "lastName": "Box",
+      "email": "Teedoz",
+      "phone": "Love",
+      "weight": 78,
+      "height": 1.7,
+      "bmi": 22.941176470588236,
       "bmiResult": "Normal",
-      "requireTrainer": "Yes",
-      "userGender": "Male",
-      "userPackage": "Yearly",
-      "userGoals": [
-        "Toxic fat reduction",
-        "Energy and Endurance",
-        "Building lean muscle",
-        "Healthier digestive system"
-      ],
-      "beenInGym": "Never",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
-      "id": 3
-    },
-    {
-      "firstName": "Tee",
-      "lastName": "Doz",
-      "email": "teedoz@gmail.com",
-      "phone": "0909090909",
-      "weight": 68,
-      "height": 1.78,
-      "bmi": 19.10112359550562,
-      "bmiResult": "Normal",
-      "requireTrainer": "Yes",
-      "userGender": "Other",
-      "userPackage": "Yearly",
-      "userGoals": [
-        "Toxic fat reduction",
-        "Energy and Endurance",
-        "Sugar craving body"
-      ],
-      "beenInGym": "Yes",
-      "enquiryDate": "2023-02-22T23:00:00.000Z",
-      "id": 4
-    },
-    {
-      "firstName": "Tee",
-      "lastName": "Doz",
-      "email": "teedoz@gmail.com",
-      "phone": "0909090909",
-      "weight": 68,
-      "height": 1.78,
-      "bmi": 19.10112359550562,
-      "bmiResult": "Normal",
-      "requireTrainer": "Yes",
-      "userGender": "Other",
-      "userPackage": "Yearly",
-      "userGoals": [
-        "Toxic fat reduction",
-        "Energy and Endurance",
-        "Sugar craving body"
-      ],
-      "beenInGym": "Yes",
-      "enquiryDate": "2023-02-22T23:00:00.000Z",
-      "id": 5
-    },
-    {
-      "firstName": "dasd",
-      "lastName": "asdasd",
-      "email": "dasdasd@dasd.com",
-      "phone": "dasdjklajlkdas",
-      "weight": 23,
-      "height": 42,
-      "bmi": 0.27380952380952384,
-      "bmiResult": "Underweight",
       "requireTrainer": "No",
-      "userGender": "Male",
+      "userGender": "Female",
       "userPackage": "Yearly",
       "userGoals": [
-        "Healthier digestive system",
-        "Sugar craving body"
+        "Energy and Endurance",
+        "Building lean muscle"
       ],
       "beenInGym": "Yes",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
-      "id": 6
-    },
-    {
-      "firstName": "Koll",
-      "lastName": "Nloin",
-      "email": "ucr@gmail.com",
-      "phone": "98898989889",
-      "weight": 100,
-      "height": 2,
-      "bmi": 25,
-      "bmiResult": "Overweight",
-      "requireTrainer": "Yes",
-      "userGender": "Female",
-      "userPackage": "Monthly",
-      "userGoals": [
-        "Toxic fat reduction",
-        "Healthier digestive system",
-        "Sugar craving body"
-      ],
-      "beenInGym": "Never",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
-      "id": 7
-    },
-    {
-      "firstName": "Kollfsd",
-      "lastName": "Nloinfs",
-      "email": "ucr@gmail.com",
-      "phone": "98898989889",
-      "weight": 100,
-      "height": 2,
-      "bmi": 25,
-      "bmiResult": "Overweight",
-      "requireTrainer": "Yes",
-      "userGender": "Female",
-      "userPackage": "Monthly",
-      "userGoals": [
-        "Toxic fat reduction",
-        "Healthier digestive system",
-        "Sugar craving body"
-      ],
-      "beenInGym": "Never",
-      "enquiryDate": "2023-02-23T23:00:00.000Z",
-      "id": 8
+      "enquiryDate": "2023-02-24T23:00:00.000Z",
+      "id": 3
     }
   ]
 }

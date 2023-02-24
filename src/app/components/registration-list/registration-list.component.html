@@ -49,9 +49,9 @@
                   <ng-container matColumnDef="action">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header class="crud-action"> Action </th>
                     <td mat-cell *matCellDef="let row d-flex"> 
-                      <button mat-icon-button color="warn"><i class="fa fa-eye"></i></button>
-                      <button mat-icon-button color="accent"><i class="fa fa-pencil"></i></button>
-                      <button mat-icon-button color="primary"><i class="fa fa-close"></i></button>
+                      <button [routerLink]="['/detail', row.id]" mat-icon-button color="warn"><i class="fa fa-eye"></i></button>
+                      <button (click)="editEnquiry(row.id)" mat-icon-button color="accent"><i class="fa fa-pencil"></i></button>
+                      <button (click)="deleteUserEnquiry(row.id)" mat-icon-button color="primary"><i class="fa fa-close"></i></button>
                     </td>
                   </ng-container>
                   
