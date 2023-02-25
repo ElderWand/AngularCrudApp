@@ -4,7 +4,7 @@
       "firstName": "Name",
       "lastName": "Box",
       "email": "Teedoz",
-      "phone": "Love",
+      "phone": "989789789789",
       "weight": 78,
       "height": 1.7,
       "bmi": 22.941176470588236,
@@ -39,6 +39,27 @@
       "beenInGym": "Yes",
       "enquiryDate": "2023-02-24T23:00:00.000Z",
       "id": 3
+    },
+    {
+      "firstName": "Loop",
+      "lastName": "Loose",
+      "email": "email@test.com",
+      "phone": "092293099",
+      "weight": 70,
+      "height": 1.8,
+      "bmi": 19.444444444444443,
+      "bmiResult": "Normal",
+      "requireTrainer": "Maybe",
+      "userGender": "Male",
+      "userPackage": "Yearly",
+      "userGoals": [
+        "Toxic fat reduction",
+        "Energy and Endurance",
+        "Fitness"
+      ],
+      "beenInGym": "Long time",
+      "enquiryDate": "2023-02-24T23:00:00.000Z",
+      "id": 4
     }
   ]
 }
