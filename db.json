@@ -119,6 +119,23 @@
       "beenInGym": "",
       "enquiryDate": "",
       "id": 7
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "weight": "",
+      "height": "",
+      "bmi": "",
+      "bmiResult": "",
+      "requireTrainer": "",
+      "userGender": "Male",
+      "userPackage": "",
+      "userGoals": "",
+      "beenInGym": "",
+      "enquiryDate": "",
+      "id": 8
     }
   ]
 }
