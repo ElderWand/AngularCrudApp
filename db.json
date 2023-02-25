@@ -3,7 +3,7 @@
     {
       "firstName": "Name",
       "lastName": "Box",
-      "email": "Teedoz",
+      "email": "Teedoz@outlook.com",
       "phone": "989789789789",
       "weight": 78,
       "height": 1.7,
@@ -23,8 +23,8 @@
     {
       "firstName": "Name",
       "lastName": "Box",
-      "email": "Teedoz",
-      "phone": "Love",
+      "email": "Teedoz@gmail.com",
+      "phone": "32232323",
       "weight": 78,
       "height": 1.7,
       "bmi": 22.941176470588236,
@@ -60,6 +60,65 @@
       "beenInGym": "Long time",
       "enquiryDate": "2023-02-24T23:00:00.000Z",
       "id": 4
+    },
+    {
+      "firstName": "fdsfs",
+      "lastName": "dfsfsd",
+      "email": "fsdf",
+      "phone": "342344",
+      "weight": 56,
+      "height": 56,
+      "bmi": 0.5,
+      "bmiResult": "Underweight",
+      "requireTrainer": "Yes",
+      "userGender": "Male",
+      "userPackage": "Quarterly",
+      "userGoals": [
+        "Energy and Endurance",
+        "Building lean muscle",
+        "Healthier digestive system"
+      ],
+      "beenInGym": "Yes",
+      "enquiryDate": "2023-02-27T23:00:00.000Z",
+      "id": 5
+    },
+    {
+      "firstName": "fdsfs",
+      "lastName": "dfsfsd",
+      "email": "fsdf",
+      "phone": "342344",
+      "weight": 56,
+      "height": 56,
+      "bmi": 0.5,
+      "bmiResult": "Underweight",
+      "requireTrainer": "Yes",
+      "userGender": "Male",
+      "userPackage": "Yearly",
+      "userGoals": [
+        "Energy and Endurance",
+        "Building lean muscle",
+        "Healthier digestive system"
+      ],
+      "beenInGym": "Yes",
+      "enquiryDate": "",
+      "id": 6
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "dsda",
+      "phone": "",
+      "weight": "",
+      "height": "",
+      "bmi": "",
+      "bmiResult": "",
+      "requireTrainer": "",
+      "userGender": "",
+      "userPackage": "",
+      "userGoals": "",
+      "beenInGym": "",
+      "enquiryDate": "",
+      "id": 7
     }
   ]
 }

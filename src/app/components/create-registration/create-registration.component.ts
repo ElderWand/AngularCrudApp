@@ -1,6 +1,6 @@
 import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgToastService } from 'ng-angular-popup';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/models/user.model';
@@ -37,7 +37,6 @@ constructor(
   private router: Router,
   private activatedRoute: ActivatedRoute,
   private toastService: NgToastService) {
-
 }
 
 ngOnInit(): void {
@@ -45,8 +44,8 @@ ngOnInit(): void {
   this.registerForm = this.fb.group({
     firstName: [''],
     lastName: [''],
-    email: [''],
-    phone: [''],
+    email: ['', [Validators.required, Validators.email]],
+    phone: ['', [Validators.pattern('^([0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10})$'), Validators.required]],
     weight: [''],
     height: [''],
     bmi: [''],
@@ -72,6 +71,7 @@ ngOnInit(): void {
     })
   })
 }
+
 
 updateUser() {
   this.api.updateRegisterUser(this.registerForm.value, this.userToUpdate)
@@ -131,6 +131,5 @@ calculateBmi(heightValue: number) {
       break;
   }
 }
-
 
 }
