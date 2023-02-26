@@ -1,61 +1,68 @@
-<mat-card class="example-card">
-    <mat-card-header class="justify-content-between">
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{ userDetails.firstName }} {{userDetails.lastName}}</mat-card-title>
-        <mat-card-subtitle>{{userDetails.email}}</mat-card-subtitle>
-        <button (click)="editEnquiry(userDetails.id)" mat-icon-button color="accent" class="float-right"><i class="fa fa-pencil"></i></button>
-    </mat-card-header>
+<div class="container pt-4">
+  <div class="row  justify-content-center">
+    <div class="col-md-8">
+      <mat-card class="example-card">
+        <mat-card-header class="justify-content-between">
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ userDetails.firstName }} {{userDetails.lastName}}</mat-card-title>
+          <mat-card-subtitle>{{userDetails.email}}</mat-card-subtitle>
+          <button (click)="editEnquiry(userDetails.id)" mat-icon-button color="accent" class="float-right"><i
+              class="fa fa-pencil"></i></button>
+        </mat-card-header>
 
-    <mat-card-content>
-        <mat-list>
-          <mat-list-item class="d-flex">
-            <span matListItemTitle>Phone Number : </span>
-            <span matListItemMeta><button mat-button>{{userDetails.phone}}</button></span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Gender : </span>
-            <span matListItemMeta>{{userDetails.userGender}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Height : </span>
-            <span matListItemMeta>{{userDetails.height}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Weight : </span>
-            <span matListItemMeta>{{userDetails.weight}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Bmi : </span>
-            <span matListItemMeta>{{userDetails.bmi}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Bmi Result: </span>
-            <span matListItemMeta>{{userDetails.bmiResult}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Package : </span>
-            <span matListItemMeta>{{userDetails.userPackage}}</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>
-            <span matListItemTitle>Goals</span>
-            <span matListItemMeta>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item class="d-flex">
+              <span matListItemTitle>Phone Number : </span>
+              <span matListItemMeta><button mat-button>{{userDetails.phone}}</button></span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Gender : </span>
+              <span matListItemMeta>{{userDetails.userGender}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Height : </span>
+              <span matListItemMeta>{{userDetails.height}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Weight : </span>
+              <span matListItemMeta>{{userDetails.weight}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Bmi : </span>
+              <span matListItemMeta>{{userDetails.bmi}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Bmi Result: </span>
+              <span matListItemMeta>{{userDetails.bmiResult}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Package : </span>
+              <span matListItemMeta>{{userDetails.userPackage}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <span matListItemTitle>Goals</span>
+              <span matListItemMeta>
                 <mat-chip-set aria-label="User Goals">
-                
-                <ng-container class="" *ngFor="let row of userDetails.userGoals">
-                    <mat-chip color="warn"><i class="fa fa-check"></i> {{row}}</mat-chip>
-                </ng-container>
-              </mat-chip-set>
-            </span>
-          </mat-list-item>
-        </mat-list>
-    </mat-card-content>
 
-  </mat-card>
-  
+                  <ng-container class="" *ngFor="let row of userDetails.userGoals">
+                    <mat-chip color="warn"><i class="fa fa-check"></i> {{row}}</mat-chip>
+                  </ng-container>
+                </mat-chip-set>
+              </span>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+
+      </mat-card>
+
+    </div>
+  </div>
+</div>
