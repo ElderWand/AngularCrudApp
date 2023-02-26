@@ -29,7 +29,6 @@ export class UserDetailComponent implements OnInit {
     this.api.getRegisterdUserId(userID)
     .subscribe(res=>{
       this.userDetails = res;
-      console.log(this.userDetails);
     })
   }
 
