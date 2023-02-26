@@ -6,8 +6,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 
 const routes: Routes = [
-  {path: '', component: HomePageComponent},
+  {path: '', redirectTo:'homepage', pathMatch: 'full'},
   {path: 'register', component:CreateRegistrationComponent},
+  {path: 'homepage', component:HomePageComponent},
   {path: 'list', component:RegistrationListComponent},
   {path: 'detail/:id', component:UserDetailComponent},
   {path: 'update/:id', component:CreateRegistrationComponent}

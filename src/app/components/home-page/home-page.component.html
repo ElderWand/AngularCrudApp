@@ -1,10 +1,16 @@
-<div class="container">
-    <div class="one-half left" #leftRef>
-      <h1>CG Generalist</h1>
-      <a href="#" class="cta">Let's Go</a>
+<div class="container-flow" #container>
+  <div class="one-half left" (mouseenter)="onLeftHover()" (mouseleave)="onLeftLeave()">
+    <div class="layer">
+      <h1>Fitness for her</h1>
+      <a role="button" routerLink="/register" class="cta">Subscribe</a>
     </div>
-    <div class="one-half right" #rightRef>
-      <h1>Designer/Developer</h1>
-      <a href="#" class="cta">Let's Go</a>
+    
+  </div>
+  <div class="one-half right" (mouseenter)="onRightHover()" (mouseleave)="onRightLeave()">
+    
+    <div class="layer">
+      <h1>Fitness for him</h1>
+      <a role="button" routerLink="/register" class="cta">Subscribe</a>
     </div>
   </div>
+</div>

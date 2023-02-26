@@ -1,39 +1,34 @@
-import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
 
-  @ViewChild('leftRef') left!: ElementRef;
-  @ViewChild('rightRef') right!: ElementRef;
+  @ViewChild('container')
+  container!: ElementRef;
+  @ViewChild('left')
+  left!: ElementRef;
+  @ViewChild('right')
+  right!: ElementRef;
 
-  @HostListener('mouseenter') onMouseEnter() {
-    if (this.isLeftHovered()) {
-      this.container.nativeElement.classList.add('left-is-hovered');
-    } else if (this.isRightHovered()) {
-      this.container.nativeElement.classList.add('right-is-hovered');
-    }
+  onLeftHover() {
+    this.container.nativeElement.classList.add('hover-left');
   }
 
-  @HostListener('mouseleave') onMouseLeave() {
-    this.container.nativeElement.classList.remove('left-is-hovered', 'right-is-hovered');
+  onLeftLeave() {
+    this.container.nativeElement.classList.remove('hover-left');
   }
 
-  constructor(private elementRef: ElementRef) { }
-  get container() {
-    return this.elementRef.nativeElement.querySelector('.container');
+  onRightHover() {
+    this.container.nativeElement.classList.add('hover-right');
   }
 
-  isLeftHovered() {
-    return this.left.nativeElement.matches(':hover');
-  }
-
-  isRightHovered() {
-    return this.right.nativeElement.matches(':hover');
+  onRightLeave() {
+    this.container.nativeElement.classList.remove('hover-right');
   }
 }
 
