@@ -28,6 +28,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatChipsModule} from '@angular/material/chips';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
 
 
@@ -43,7 +44,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     CreateRegistrationComponent,
     RegistrationListComponent,
     UserDetailComponent,
-    HomePageComponent
+    HomePageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
